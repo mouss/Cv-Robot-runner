@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+#container-global {
+    top:0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: 800px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+
+}
+.masque {
+     overflow:hidden;
+     position:absolute;
+     width: 116px;
+     height: 110px;
+   }
+   .sprite {
+     position: absolute;
+   }
+   #sol {
+     position:absolute;
+    top:500px;
+    width: 1000px;
+    height: 100px;
+    display: inline-block;
+    background-image: url(img/BGTile.png);
+}
+#paysage {
+    width: 1000px;
+    height: 500px;
+    overflow: hidden;
+    position: absolute;
+}
+#lefond {
+     position:absolute;
+
+   }
+   #score {
+
+    position: absolute;
+     color: white;
+     font-size: 20px;
+     z-index: 1;
+   }
+   #globalanime{
+     position: relative;
+   }
+#menu{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+   
+}
+#menu li {
+    float: left;
+    list-style: none;
+     color: white;
+    text-align: center;
+    padding: 14px 16px;
+    cursor:  pointer;
+}
+#menu li:last-child {
+    border-right: none;
+    float:right;
+}
+
+#instruction{
+    text-align: center;
+    margin: 5px;
+}
+#instruction p {
+    font-size: 10px;
+}
+h1{
+    color:aquamarine;
+}
+a{
+    color:white;
+}
