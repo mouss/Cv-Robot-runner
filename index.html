@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CV / Robot Runner</title>
+</head>
+
+
+<link rel="stylesheet" href="style.css">
+<body id="body">
+  <div id="container-global">
+  
+    <div id="instruction">
+    <h1>Cv - Robot Runner</h1>     
+    <p>Découvrez mon Cv en Capturant 5 étoiles avec le Robot !</p>
+    <p>Vous pouvez sauter grâce à la fleche du haut &uarr; pour capturer des étoiles.</p>
+    <p>Cliquez sur start pour commencer !</p>
+    </div>
+      
+   <ul id="menu">
+       <li id="start">Start</li>
+       <li id="stop">Stop</li>
+       <li><a href="cv.pdf" target="_blank">CV au format pdf</a></li>
+   </ul>
+    <div id="globalanime">
+      <div id="score"></div>
+      <div id="paysage">
+
+        <img src="img/fond2.jpg" id="lefond" />
+      </div>
+
+      <div id="container" class="masque" >
+        <img id="contenu" src="img/robot.png" class="sprite"/>
+      </div>
+
+    <div id="sol"></div>
+  </div>
+</div>
+<script src="pieces.js"></script>
+<script src="robot.js"></script>
+
+</body>
+</html>
