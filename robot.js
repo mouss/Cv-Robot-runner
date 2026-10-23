@@ -34,10 +34,20 @@ window.document.addEventListener('DOMContentLoaded', function () {
   var gsol = 0;
   var cvImage = null;
 
+  // Zone de collision du robot : suit la taille de l'image affichée
+  var rect1 = {
+    x: parseFloat(masque.style.left),
+    y: parseFloat(masque.style.top),
+    width: 0,
+    height: 0
+  };
+
   // Animation du sprite
   var setPosition = function (positions, selection) {
     masque.style.width = positions[selection].masque.width + 'px';
     masque.style.height = positions[selection].masque.height + 'px';
+    rect1.width = positions[selection].masque.width;
+    rect1.height = positions[selection].masque.height;
     image.style.top = positions[selection].image.top + 'px';
     image.style.left = positions[selection].image.left + 'px';
   };
@@ -69,14 +79,6 @@ window.document.addEventListener('DOMContentLoaded', function () {
   };
 
   steady();
-
-  // Position du robot (pour les collisions)
-  var rect1 = {
-    x: parseFloat(masque.style.left),
-    y: parseFloat(masque.style.top),
-    width: parseFloat(masque.style.width),
-    height: parseFloat(masque.style.height)
-  };
 
   // Défilement du paysage et du sol
   var animFond = function () {
