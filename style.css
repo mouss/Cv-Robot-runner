@@ -96,3 +96,8 @@ h1{
 a{
     color:white;
 }
+/* Les images du jeu gardent leur taille réelle,
+   même si la page qui l'héberge impose img { max-width: 100% } */
+#globalanime img {
+    max-width: none;
+}
