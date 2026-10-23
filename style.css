@@ -6,8 +6,7 @@
     top:0px;
     margin-left: auto;
     margin-right: auto;
-    width: 1000px;
-    height: 800px;
+    max-width: 1000px;
     font-family: Verdana, Arial, Helvetica, sans-serif;
 
 }
@@ -47,7 +46,24 @@
    }
    #globalanime{
      position: relative;
+     width: 1000px;
+     height: 600px;
+     overflow: hidden;
+     touch-action: manipulation;
+     user-select: none;
+     -webkit-user-select: none;
    }
+.piece {
+    position: absolute;
+    width: 53px;
+    height: 53px;
+}
+#cv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
 #menu{
     list-style-type: none;
     overflow: hidden;
